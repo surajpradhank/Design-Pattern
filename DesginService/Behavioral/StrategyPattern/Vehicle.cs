@@ -1,17 +1,17 @@
-﻿using DesginService.Behavioral.StrategyPattern.Stratergy;
+﻿using DesginService.Behavioral.StrategyPattern.Strategy;
 
 namespace DesginService.Behavioral.StrategyPattern;
 
 public class Vehicle
 {
-    IDriveStratergy driveStratergy;
+    IDriveStrategy driveStrategy;
 
-    public Vehicle(IDriveStratergy driveStratergyObj)
+    public Vehicle(IDriveStrategy driveStrategyObj)
     {
-        driveStratergy = driveStratergyObj;
+        driveStrategy = driveStrategyObj;
     }
     public void drive()
     {
-        driveStratergy.drive();
+        driveStrategy.drive();
     }
 }

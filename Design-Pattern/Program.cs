@@ -1,14 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using DesginService.Behavioral;
-using DesginService.Behavioral.StrategyPattern;
+Console.WriteLine("Hello, World! Explore Design pattern used in sod=ftware development");
 
-Console.WriteLine("Hello, World!");
+#region Call Strategy Design Pattern
+//Console.WriteLine("Strategy design pattern example");
+//StrategyStore.validateStrategy();
+#endregion
 
-Vehicle vehicle = new OffRoadVehicle();
-vehicle.drive();
-
-Vehicle vehicle1 = new GoodsVehicle();
-vehicle1.drive();
+#region Call Observer Design Pattern
+//Console.WriteLine("Observer Design Pattern Example");
+//ObserverStore.validateObserver();
+#endregion
 
 Console.WriteLine("Thank you");
+
+
 

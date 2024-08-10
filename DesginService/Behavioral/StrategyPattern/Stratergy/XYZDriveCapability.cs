@@ -1,6 +1,6 @@
-﻿namespace DesginService.Behavioral.StrategyPattern.Stratergy
+﻿namespace DesginService.Behavioral.StrategyPattern.Strategy
 {
-    public class XYZDriveCapability : IDriveStratergy
+    public class XYZDriveCapability : IDriveStrategy
     {
         public void drive()
         {

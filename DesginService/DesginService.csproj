@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Behavioral\ObserverPattern\Observable\IphoneObservableImpl.cs~RFf1e5c31.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Creational\FactoryPattern\" />
   </ItemGroup>
 
