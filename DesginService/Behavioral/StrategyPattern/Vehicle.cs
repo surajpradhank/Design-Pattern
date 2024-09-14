@@ -1,6 +1,6 @@
-﻿using DesginService.Behavioral.StrategyPattern.Strategy;
+﻿using DesignService.Behavioral.StrategyPattern.Strategy;
 
-namespace DesginService.Behavioral.StrategyPattern;
+namespace DesignService.Behavioral.StrategyPattern;
 
 public class Vehicle
 {

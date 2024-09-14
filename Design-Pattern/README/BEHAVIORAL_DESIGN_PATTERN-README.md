@@ -48,4 +48,15 @@
 
   </Details>
 
+## Mediator Pattern 
+
+Ex- Online Auction System, Airline Management System(Two planes never interact with each other rather talk with a mediator like airline management system to seek their permission whether they can land or not)
+
+It encourage loose coupling by keeping objects from referring to each other explicitly and allows them to communicate through a mediator object.
+It reduced chaotic dependencies between objects. The pattern restricts direct communications between the objects 
+and forces them to collaborate only via a mediator object.
+
+
+
+
 

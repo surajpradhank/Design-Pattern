@@ -1,5 +1,5 @@
-﻿using DesginService.Behavioral;
-using DesginService.Behavioral.StrategyPattern;
+﻿using DesignService.Behavioral;
+using DesignService.Behavioral.StrategyPattern;
 
 namespace Design_Pattern.BehavioralCall
 {

@@ -1,4 +1,4 @@
-﻿namespace DesginService.Behavioral.StrategyPattern.Strategy;
+﻿namespace DesignService.Behavioral.StrategyPattern.Strategy;
 
 public class SpecialDriveStrategy : IDriveStrategy
 {

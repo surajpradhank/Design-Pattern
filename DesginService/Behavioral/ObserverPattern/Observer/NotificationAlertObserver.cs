@@ -1,4 +1,4 @@
-﻿namespace DesginService.Behavioral.ObserverPattern.Observer;
+﻿namespace DesignService.Behavioral.ObserverPattern.Observer;
 
 public interface NotificationAlertObserver
 {

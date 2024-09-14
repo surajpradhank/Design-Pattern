@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DesginService\DesginService.csproj" />
+    <ProjectReference Include="..\DesginService\DesignService.csproj" />
   </ItemGroup>
 
 </Project>

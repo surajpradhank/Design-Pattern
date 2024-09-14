@@ -1,6 +1,6 @@
-﻿using DesginService.Behavioral.ObserverPattern.Observable;
+﻿using DesignService.Behavioral.ObserverPattern.Observable;
 
-namespace DesginService.Behavioral.ObserverPattern.Observer
+namespace DesignService.Behavioral.ObserverPattern.Observer
 {
     public class MobileAlertObserverImpl : NotificationAlertObserver
     {

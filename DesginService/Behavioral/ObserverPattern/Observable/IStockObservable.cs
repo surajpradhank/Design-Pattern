@@ -1,6 +1,6 @@
-﻿using DesginService.Behavioral.ObserverPattern.Observer;
+﻿using DesignService.Behavioral.ObserverPattern.Observer;
 
-namespace DesginService.Behavioral.ObserverPattern.Observable;
+namespace DesignService.Behavioral.ObserverPattern.Observable;
 
 public interface IStockObservable
 {
