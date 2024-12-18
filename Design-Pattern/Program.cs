@@ -2,8 +2,10 @@
 using Design_Pattern.BehavioralCall;
 using DesignService.Behavioral.MediatorPattern.Colleague;
 using DesignService.Behavioral.MediatorPattern.Mediator;
+using DesignService.Creational.FactoryPattern;
+using DesignService.Structural.DecoratorPattern;
 
-Console.WriteLine("Hello, World! Explore Design pattern used in sod=ftware development");
+Console.WriteLine("Hello, World! Explore Design pattern used in software development");
 
 #region Call Strategy Design Pattern
 //Console.WriteLine("Strategy design pattern example");
@@ -35,8 +37,26 @@ Console.WriteLine("Hello, World! Explore Design pattern used in sod=ftware devel
 
 #endregion
 
+#region Call Decorator pattern
+
+BasePizza margChesee = new ExtraCheeseDecorator(new Margherita());
+Console.WriteLine("Margherita + Extra Cheese cost = " + margChesee.Cost());
+
+BasePizza margCheseeWithMushroom = new MushroomDecorator(new ExtraCheeseDecorator(new Margherita()));
+Console.WriteLine("Margherita + Extra Cheese + Mushroom cost = " + margCheseeWithMushroom.Cost());
+#endregion
+
+#region Call Factory Pattern
+
+AnimalFactory animalFactory = new();
+
+IAnimal dog = animalFactory.CreateAnimal("dog");
+dog.Speak();
+
+IAnimal cat = animalFactory.CreateAnimal("cat");
+cat.Speak();
+#endregion
 
 Console.WriteLine("Thank you");
-
 
 

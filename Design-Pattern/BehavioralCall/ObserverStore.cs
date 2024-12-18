@@ -14,10 +14,10 @@ internal static class ObserverStore
         NotificationAlertObserver observer2 = new EmailAlertObserverImpl("xyz.gmail.com", iPhoneStockObservable);
         NotificationAlertObserver observer3 = new MobileAlertObserverImpl("test_username", iPhoneStockObservable);
 
-        iPhoneStockObservable.add(observer1);
-        iPhoneStockObservable.add(observer2);
-        iPhoneStockObservable.add(observer3);
+        iPhoneStockObservable.Add(observer1);
+        iPhoneStockObservable.Add(observer2);
+        iPhoneStockObservable.Add(observer3);
 
-        iPhoneStockObservable.setStockCount(10);
+        iPhoneStockObservable.SetStockCount(10);
     }
 }

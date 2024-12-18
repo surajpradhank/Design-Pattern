@@ -5,7 +5,7 @@ namespace DesignService.Behavioral.ObserverPattern.Observer;
 public class EmailAlertObserverImpl : NotificationAlertObserver
 {
     string emailId;
-    IStockObservable observable;
+    private readonly IStockObservable observable;
 
     public EmailAlertObserverImpl(string _emailId, IStockObservable _observable)
     {
