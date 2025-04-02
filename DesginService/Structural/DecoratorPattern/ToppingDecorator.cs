@@ -8,43 +8,48 @@ namespace DesignService.Structural.DecoratorPattern;
 
 
 /*
- * ToppingDecorator -> IS-A  -> Basepizza
+ * ToppingDecorator -> IS-A  -> BasePizza
  * ToppingDecorator -> HAS-A  -> BasePizza
  * 
  */
 
 public abstract class ToppingDecorator : BasePizza
 {
+    protected BasePizza basePizza;
+
+    protected ToppingDecorator(BasePizza basePizza)
+    {
+        this.basePizza = basePizza;
+    }
 }
 
 public class ExtraCheeseDecorator : ToppingDecorator
 {
-    BasePizza basePizza;
 
-    public ExtraCheeseDecorator(BasePizza basePizza)
+    public ExtraCheeseDecorator(BasePizza basePizza) : base(basePizza)
     {
         this.basePizza = basePizza;
     }
 
     public override int Cost()
     {
-        return this.basePizza.Cost() + 10;
+        return basePizza.Cost() + 10;
     }
 
 }
 
 public class MushroomDecorator : ToppingDecorator
 {
-    BasePizza basePizza;
+    
 
-    public MushroomDecorator(BasePizza basePizza)
+    public MushroomDecorator(BasePizza basePizza) : base(basePizza)
     {
         this.basePizza = basePizza;
     }
 
     public override int Cost()
     {
-        return this.basePizza.Cost() + 20;
+        return basePizza.Cost() + 20;
     }
 
 }

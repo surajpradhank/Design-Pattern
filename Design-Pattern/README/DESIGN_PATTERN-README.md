@@ -87,6 +87,24 @@ It reduced chaotic dependencies between objects. The pattern restricts direct co
 
 </Details>
 
+## Adapter Pattern
+ 
+<Details>
+
+   It is a structural design pattern that allows objects with incompatible interfaces to work together. It acts as a bridge between two interfaces, converting one interface into another expected by the client.
+
+
+### UseCase
+ Power Plug Adapter: A common real-world analogy is a power plug adapter. 
+ For example, an American plug (which is designed for 120V) may need an adapter to work with a European socket (which is designed for 230V). 
+ The adapter doesn’t modify the plug or socket, but instead makes them compatible.
+
+### Why?
+
+### Benefits in C#
+
+</Details>
+
 # Creational Design Pattern
 
 ## Factory Design Pattern

@@ -3,13 +3,14 @@ using Design_Pattern.BehavioralCall;
 using DesignService.Behavioral.MediatorPattern.Colleague;
 using DesignService.Behavioral.MediatorPattern.Mediator;
 using DesignService.Creational.FactoryPattern;
+using DesignService.Structural.AdapterPattern;
 using DesignService.Structural.DecoratorPattern;
 
 Console.WriteLine("Hello, World! Explore Design pattern used in software development");
 
 #region Call Strategy Design Pattern
 //Console.WriteLine("Strategy design pattern example");
-//StrategyStore.validateStrategy();
+StrategyStore.validateStrategy();
 #endregion
 
 #region Call Observer Design Pattern
@@ -43,6 +44,16 @@ BasePizza margChesee = new ExtraCheeseDecorator(new Margherita());
 Console.WriteLine("Margherita + Extra Cheese cost = " + margChesee.Cost());
 
 BasePizza margCheseeWithMushroom = new MushroomDecorator(new ExtraCheeseDecorator(new Margherita()));
+Console.WriteLine("Margherita + Extra Cheese cost = " + margChesee.Cost());
+
+// Create a Margherita pizza
+BasePizza margherita = new Margherita();
+
+// Apply multiple decorators to the Margherita pizza
+BasePizza margChesee1 = new ExtraCheeseDecorator(margherita);
+BasePizza margCheseeWithMushroom1 = new MushroomDecorator(margChesee);
+
+Console.WriteLine("Margherita + Extra Cheese + Mushroom cost = " + margCheseeWithMushroom1.Cost());
 Console.WriteLine("Margherita + Extra Cheese + Mushroom cost = " + margCheseeWithMushroom.Cost());
 #endregion
 
@@ -55,6 +66,16 @@ dog.Speak();
 
 IAnimal cat = animalFactory.CreateAnimal("cat");
 cat.Speak();
+#endregion
+
+#region Adapter Desing Pattern
+OldSystem oldSystem = new OldSystem();
+Adapter adapter = new Adapter(oldSystem);
+NewSystem newSystem = new NewSystem();
+
+// Get adapted data and pass it to the new system
+string adaptedData = adapter.GetDataForNewSystem();
+newSystem.DisplayData(adaptedData);
 #endregion
 
 Console.WriteLine("Thank you");

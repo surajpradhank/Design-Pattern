@@ -5,7 +5,7 @@ namespace DesignService.Behavioral
 {
     public class OffRoadVehicle : Vehicle
     {
-        public OffRoadVehicle() : base(new SpecialDriveStrategy())
+        public OffRoadVehicle(IDriveStrategy driveStrategy) : base(driveStrategy)
         {
         }
     }

@@ -10,7 +10,7 @@ public class EmailAlertObserverImpl : NotificationAlertObserver
     public EmailAlertObserverImpl(string _emailId, IStockObservable _observable)
     {
         emailId = _emailId;
-        observable = _observable;
+       observable = _observable;
     }
 
     public void Update()

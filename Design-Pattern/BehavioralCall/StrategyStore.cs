@@ -1,5 +1,6 @@
 ﻿using DesignService.Behavioral;
 using DesignService.Behavioral.StrategyPattern;
+using DesignService.Behavioral.StrategyPattern.Strategy;
 
 namespace Design_Pattern.BehavioralCall
 {
@@ -7,7 +8,7 @@ namespace Design_Pattern.BehavioralCall
     {
         public static void validateStrategy()
         {
-            Vehicle vehicle = new OffRoadVehicle();
+            Vehicle vehicle = new OffRoadVehicle(new SpecialDriveStrategy());
             vehicle.drive();
 
             Vehicle vehicle1 = new GoodsVehicle();
